@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +10,7 @@
     <title>Quality Control</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
@@ -53,9 +51,9 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
             	<li><a href="">Home</a></li>
-            	<li><a id="cpac" href="">C-PAC</a></li>
+            	<li><a id="cpac" href="http://fcp-indi.github.io/">C-PAC</a></li>
                 <li>
-                    <a href="#">View on Github <i class="fa fa-github"></i></a>
+                    <a href="https://github.com/FCP-INDI/C-PAC">View on Github <i class="fa fa-github"></i></a>
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -91,22 +89,22 @@
 	                    	<li>
 		                        <a href="javascript:;" data-toggle="collapse" data-target="#mniedgedd">MNI Edge Overlapped on Mean Functional Image<i class="fa fa-fw fa-caret-down"></i></a>
 		                        <ul id="mniedgedd" class="collapse">
-		                            <li><a href="#myCarousel" data-slide-to="6">x</a></li>
-		                            <li><a href="#myCarousel" data-slide-to="7">z</a></li>
+		                            <li><a href="#myCarousel" data-slide-to="6">Sagital</a></li>
+		                            <li><a href="#myCarousel" data-slide-to="7">Axial</a></li>
 		                        </ul>
 	                    	</li>
 	                    	<li>
 		                        <a href="javascript:;" data-toggle="collapse" data-target="#stddd">T1 Edge Overlapped on std Functional Image<i class="fa fa-fw fa-caret-down"></i></a>
 		                        <ul id="stddd" class="collapse">
-		                            <li><a href="#myCarousel" data-slide-to="8">x</a></li>
-		                            <li><a href="#myCarousel" data-slide-to="9">z</a></li>
+		                            <li><a href="#myCarousel" data-slide-to="8">Sagital</a></li>
+		                            <li><a href="#myCarousel" data-slide-to="9">Axial</a></li>
 		                        </ul>
 	                    	</li>
 	                    	<li>
 		                        <a href="javascript:;" data-toggle="collapse" data-target="#mnimindd">MNI Edge Overlapped on Normalized Anatomical<i class="fa fa-fw fa-caret-down"></i></a>
 		                        <ul id="mnimindd" class="collapse">
-		                            <li><a href="#myCarousel" data-slide-to="10">x</a></li>
-		                            <li><a href="#myCarousel" data-slide-to="11">z</a></li>
+		                            <li><a href="#myCarousel" data-slide-to="10">Sagital</a></li>
+		                            <li><a href="#myCarousel" data-slide-to="11">Axial</a></li>
 		                        </ul>
 	                    	</li>
                             <li><a href="">Movement Plots</a></li>
@@ -194,6 +192,17 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).bind('keyup', function(e) {
+        if(e.which == 39){
+            $('.carousel').carousel('next');
+        }
+        else if(e.which == 37){
+            $('.carousel').carousel('prev');
+        }
+    });
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

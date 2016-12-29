@@ -128,7 +128,7 @@ ul.alert-dropdown {
         padding-bottom: 40px;
     }
 
-    .side-nav>li>a {
+    .side-nav a {
         width: 225px;
     }
 
@@ -143,15 +143,20 @@ ul.alert-dropdown {
     padding: 0;
 }
 
-.side-nav>li>ul>li>a {
+.side-nav a{
     display: block;
     padding: 10px 15px 10px 38px;
     text-decoration: none;
     color: #999;
 }
 
-.side-nav>li>ul>li>a:hover {
+.side-nav a:hover {
     color: #fff;
+}
+
+.side-nav ul{
+    list-style-type: none;
+    padding: 0px;
 }
 
 /* Flot Chart Containers */
